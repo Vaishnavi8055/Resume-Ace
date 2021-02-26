@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <title>Resume Ace</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand fs-2 fw-bolder" style="font-family: 'Alice', serif;"><span class="text-primary">Resume</span> <span class="text-primary">Ace</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +22,9 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mr-auto mx-auto  mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fw-bold fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      Resume
                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -33,7 +34,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fw-bold fs-5" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      CV
                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -43,16 +44,28 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fw-bold fs-5" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      Resources
                     </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown2">
                             <li><a class="dropdown-item" href="#">Resume Guide</a></li>
                             <li><a class="dropdown-item" href="#">CV Guide</a></li>
                             <li><a class="dropdown-item" href="#">Career Guide</a></li>
                         </ul>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold fs-5" href="#">FAQ</a>
+                    </li>
                 </ul>
+
+                <form class="d-flex">
+                    <button class="btn btn-outline-primary bg-primary
+                    text-light fw-bold mx-2" type="submit">Sign Up</button>
+                    <button class="btn btn-outline-primary bg-primary
+                    text-light fw-bold" type="submit">Log In</button>
+
+                </form>
             </div>
         </div>
 
