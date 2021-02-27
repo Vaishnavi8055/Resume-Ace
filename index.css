@@ -81,7 +81,7 @@
         width: 100%;
         height: 42rem;
         margin-bottom: 9rem;
-        border: solid;
+        /* border: solid; */
     }
     
     .right-side-3 {
@@ -99,7 +99,7 @@
     .header-4 {
         width: 100%;
         height: 42rem;
-        border: solid;
+        /* border: solid; */
     }
     
     .right-side-4 {
