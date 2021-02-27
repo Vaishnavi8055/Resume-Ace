@@ -1,3 +1,4 @@
-.navbar-nav li {
-    margin-left: 3rem;
+.navbar-nav>li {
+    padding-left: 28px;
+    padding-right: 28px;
 }
