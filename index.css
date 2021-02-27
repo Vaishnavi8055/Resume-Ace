@@ -35,11 +35,22 @@
         float: right;
         height: 38rem;
         position: relative;
-        bottom: 31rem;
+        bottom: 34rem;
     }
     
     .left-side {
         height: 38rem;
         width: 100%;
-        padding-top: 14rem;
+        padding-top: 8rem;
+    }
+    
+    .left-side button {
+        height: 5rem;
+        width: 15rem;
+        border-radius: 5%;
+        background-color: #2196F3;
+        color: white;
+        font-weight: 700;
+        font-size: larger;
+        border: none;
     }
