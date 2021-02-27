@@ -28,7 +28,7 @@
     
     .header {
         width: 100%;
-        height: 50rem;
+        height: 47rem;
     }
     
     .right-side img {
@@ -54,4 +54,20 @@
         font-size: larger;
         border: none;
         margin-top: 0.5rem;
+    }
+    
+    .header-2 {
+        width: 100%;
+        height: 47rem;
+        /* border: solid red; */
+    }
+    
+    .left-side-2 {
+        margin-top: 7rem;
+        /* border: solid; */
+        position: absolute;
+        /* margin-left: 30px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
