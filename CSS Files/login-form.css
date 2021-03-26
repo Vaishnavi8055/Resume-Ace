@@ -1,9 +1,9 @@
 .sign-up {
-    height: 475px;
-    border: solid;
-    width: 300px;
+    height: 360px;
+    border: rgb(21, 21, 133) solid;
+    width: 350px;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 5%;
     padding-top: 1px;
     padding-left: 10px;
     padding-right: 1px;
@@ -32,12 +32,13 @@ input[type=text] {
     width: 50px;
 } */
 
-form {
-    padding-top: 1rem;
-}
+
+/* form {
+    padding-top: 0.2rem;
+} */
 
 form .btn {
-    padding: 7px;
+    padding: 5px;
     background-color: #2196F3;
     width: 95%;
     color: white;
@@ -49,4 +50,9 @@ form .btn:hover {
     color: white;
     font-weight: 600;
     font-size: large;
+}
+
+label {
+    padding-bottom: 4px;
+    padding-top: 0px;
 }
