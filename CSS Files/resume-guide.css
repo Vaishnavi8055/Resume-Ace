@@ -1,0 +1,37 @@
+.navbar-nav>li {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu,
+.dropdown-menu>li>a {
+    border-radius: 2%;
+    border-color: #000;
+}
+
+.dropdown-menu>li>a:hover {
+    color: white;
+    background-color: #0065ac;
+    font-weight: 500;
+}
+
+h1.ques-1 {
+    text-align: center;
+}
+
+.section-1 {
+    margin-top: 35px;
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
