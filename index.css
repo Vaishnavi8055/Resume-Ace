@@ -289,3 +289,6 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
+    .footer .container .section {
+        margin-right: 30px;
+    }
