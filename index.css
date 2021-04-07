@@ -335,3 +335,15 @@
         font-weight: bold;
         font-size: medium;
     }
+    .quick-links ul li a:hover {
+        color: #2196F3;
+    }
+    
+    .resume-guide {
+        position: relative;
+        width: 13%;
+    }
+    
+    .resume-guide ul li {
+        list-style: none;
+    }
