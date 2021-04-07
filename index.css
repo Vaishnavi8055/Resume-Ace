@@ -315,3 +315,15 @@
     .social li a:hover {
         background-color: white;
     }
+    .social li a .fa {
+        font-size: 20px;
+    }
+    
+    .quick-links {
+        position: relative;
+        width: 16%;
+    }
+    
+    .quick-links ul li {
+        list-style: none;
+    }
