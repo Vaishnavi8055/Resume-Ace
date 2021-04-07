@@ -327,3 +327,11 @@
     .quick-links ul li {
         list-style: none;
     }
+    .quick-links ul li a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+    }
