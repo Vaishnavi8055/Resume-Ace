@@ -347,3 +347,12 @@
     .resume-guide ul li {
         list-style: none;
     }
+    
+    .resume-guide ul li a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+    }
