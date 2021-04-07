@@ -299,3 +299,16 @@
     .social li {
         list-style: none;
     }
+    
+    .social li a {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        background: #222;
+        border-radius: 50%;
+    }
