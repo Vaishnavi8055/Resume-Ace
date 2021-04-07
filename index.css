@@ -283,3 +283,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
