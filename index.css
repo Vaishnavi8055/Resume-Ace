@@ -360,3 +360,12 @@
     .resume-guide ul li a:hover {
         color: #2196F3;
     }
+    .support {
+        position: relative;
+        width: 14%;
+        /* border: solid yellow; */
+    }
+    
+    .support ul li {
+        list-style: none;
+    }
