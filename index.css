@@ -369,3 +369,15 @@
     .support ul li {
         list-style: none;
     }
+    .support ul li a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+    }
+    
+    .support ul li a:hover {
+        color: #2196F3;
+    }
