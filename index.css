@@ -312,3 +312,6 @@
         background: #222;
         border-radius: 50%;
     }
+    .social li a:hover {
+        background-color: white;
+    }
