@@ -272,3 +272,14 @@
     .support ul li a:hover {
         color: #2196F3;
     }
+    .footer {
+        margin-top: 10rem;
+        /* border: solid yellow; */
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
