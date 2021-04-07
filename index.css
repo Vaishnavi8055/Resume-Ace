@@ -292,3 +292,7 @@
     .footer .container .section {
         margin-right: 30px;
     }
+    .social {
+        margin-top: 20px;
+        display: flex;
+    }
