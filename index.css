@@ -356,3 +356,7 @@
         font-weight: bold;
         font-size: medium;
     }
+    
+    .resume-guide ul li a:hover {
+        color: #2196F3;
+    }
