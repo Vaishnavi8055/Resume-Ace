@@ -31,12 +31,27 @@ h1.ques-1 {
 }
 
 .section-1 {
-    margin-top: 35px;
-    margin-left: 17rem;
-    margin-right: 17rem;
+    margin-top: 3rem;
 }
 
+.rq-head {
+    color: black;
+}
 
-/* ul {
-    list-style-image: url('/images/list-green-tick.png');
-} */
+.rq-text {
+    text-align: center;
+}
+
+.list-icon li:before {
+    content: "\f00c";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    color: green;
+    font-size: larger;
+    font-weight: bolder;
+}
