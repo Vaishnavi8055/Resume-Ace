@@ -1,5 +1,5 @@
 .sign-up {
-    height: 360px;
+    height: 371px;
     border: rgb(21, 21, 133) solid;
     width: 350px;
     margin: auto;
@@ -20,6 +20,31 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+}
+
+.label-icon::before {
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: 0.27em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.icon-1::before {
+    content: "\f0e0";
+}
+
+.icon-2::before {
+    content: "\f023";
+}
+
+.icon-3::before {
+    content: "\f023";
 }
 
 
