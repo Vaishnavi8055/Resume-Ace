@@ -32,6 +32,8 @@ h1.ques-1 {
 
 .section-1 {
     margin-top: 3rem;
+    margin-right: 20rem;
+    margin-left: 20rem;
 }
 
 .rq-head {
@@ -39,7 +41,9 @@ h1.ques-1 {
 }
 
 .rq-text {
-    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: large;
 }
 
 .list-icon li:before {
@@ -54,4 +58,8 @@ h1.ques-1 {
     color: green;
     font-size: larger;
     font-weight: bolder;
+}
+
+.list-icon ul {
+    list-style: none;
 }
