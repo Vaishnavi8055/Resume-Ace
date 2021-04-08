@@ -272,6 +272,7 @@
     .support ul li a:hover {
         color: #2196F3;
     }
+    
     .footer {
         margin-top: 10rem;
         /* border: solid yellow; */
@@ -283,19 +284,24 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    
     .footer .container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
     }
+    
     .footer .container .section {
         margin-right: 30px;
     }
+    
     .social {
         margin-top: 20px;
         display: flex;
+        /* border: solid blue; */
     }
+    
     .social li {
         list-style: none;
     }
@@ -311,10 +317,13 @@
         height: 45px;
         background: #222;
         border-radius: 50%;
+        /* border: solid rgb(190, 181, 181); */
     }
+    
     .social li a:hover {
         background-color: white;
     }
+    
     .social li a .fa {
         font-size: 20px;
     }
@@ -327,6 +336,7 @@
     .quick-links ul li {
         list-style: none;
     }
+    
     .quick-links ul li a {
         text-decoration: none;
         margin-bottom: 10px;
@@ -335,6 +345,7 @@
         font-weight: bold;
         font-size: medium;
     }
+    
     .quick-links ul li a:hover {
         color: #2196F3;
     }
@@ -360,6 +371,7 @@
     .resume-guide ul li a:hover {
         color: #2196F3;
     }
+    
     .support {
         position: relative;
         width: 14%;
@@ -369,6 +381,7 @@
     .support ul li {
         list-style: none;
     }
+    
     .support ul li a {
         text-decoration: none;
         margin-bottom: 10px;
@@ -381,20 +394,48 @@
     .support ul li a:hover {
         color: #2196F3;
     }
-    .copyright-section{
+    
+    .copyright-section {
         color: white;
         margin: 0 auto;
     }
-    #copyright::after{
+    
+    #copyright::after {
         content: '';
         display: block;
         width: 0;
         height: 2px;
         /* position:absolute; */
-        background-color: red;
+        background-color: yellow;
         transition: all .3s;
     }
-    #copyright:hover:after{
+    
+    #copyright:hover:after {
         width: 100%;
     }
-   
+    
+    #copyright #footer-link {
+        text-decoration: none;
+        color: #2196F3;
+        font-family: "FontAwesome";
+        font-weight: 900;
+    }
+    
+    .links-c {
+        text-decoration: none;
+        border: #000;
+        color: grey;
+        text-align: center;
+    }
+    
+    #contact button {
+        border: #222;
+        height: max-content;
+        width: max-content;
+        font-size: medium;
+        font-weight: bold;
+    }
+    
+    #contact button a:hover {
+        color: beige;
+    }
