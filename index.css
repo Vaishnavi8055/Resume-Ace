@@ -381,3 +381,20 @@
     .support ul li a:hover {
         color: #2196F3;
     }
+    .copyright-section{
+        color: white;
+        margin: 0 auto;
+    }
+    #copyright::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        /* position:absolute; */
+        background-color: red;
+        transition: all .3s;
+    }
+    #copyright:hover:after{
+        width: 100%;
+    }
+   
