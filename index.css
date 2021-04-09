@@ -44,7 +44,7 @@
         padding-top: 8rem;
     }
     
-    .left-side button {
+    .left-side .button-cr {
         height: 5rem;
         width: 15rem;
         border-radius: 5%;
@@ -54,6 +54,7 @@
         font-size: larger;
         border: none;
         margin-top: 0.5rem;
+        padding-top: 1.5rem;
     }
     
     .header-2 {
