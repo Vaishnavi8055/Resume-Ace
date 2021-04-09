@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Resume</title>
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <!-- Boostrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS Files/resume-template-input.css">
+</head>
+
+<body>
+    <!-- html code here -->
+
+
+    <!-- navbar starts -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top flex-column border border-bottom">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand fs-2 fw-bolder" style="font-family: 'Alice', serif;"><span class="text-primary">Resume</span> <span class="text-primary">Ace</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex my-2">
+                <a class="btn btn-outline-primary bg-primary
+                    text-light fw-bold mx-4" href="./HTML Files/signup-form.html" type="submit">Sign Up</a>
+                <a class="btn btn-outline-primary bg-primary
+                    text-light fw-bold" type="submit" href="./HTML Files/login-form.html">Log In</a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <div class="container bg-light mt-4 form-1" id="main-form-1">
+        <div class="row">
+            <h2 class="text-center mb-3 mt-2">Personal Information</h2>
+
+            <div class="col-md-6">
+                <!-- first column of 6 rows -->
+
+                <!--First Name field -->
+                <div class="form-group mt-2">
+                    <label for="nameField" class="fw-bold">First Name</label>
+                    <input type="text" id="nameField" class="form-control mt-2" required placeholder="Enter Your First Name">
+                </div>
+
+
+                <!-- Address field -->
+                <div class="form-group mt-2">
+                    <label for="addField" class="fw-bold">Address</label>
+                    <input type="text" id="addField" class="form-control mt-2" placeholder="Enter Your Address">
+                </div>
+
+
+                <!--Email Address field -->
+                <div class="form-group mt-2">
+                    <label for="emailField" class="fw-bold">Email Address</label>
+                    <input type="text" id="emailField" class="form-control mt-2" placeholder="Enter Your Email Address">
+                </div>
+
+                <!--LinkedIn Profile Url field -->
+                <div class="form-group mt-2">
+                    <label for="ldField" class="fw-bold">LinkedIn Profile URL</label>
+                    <input type="text" id="ldField" class="form-control mt-2" placeholder="LinkedIn Profile Link">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- second column of 6 rows -->
+
+                <!--Last Name field -->
+                <div class="form-group mt-2">
+                    <label for="fnameField" class="fw-bold">Last Name</label>
+                    <input type="text" id="lnameField" class="form-control mt-2" required placeholder="Enter Your Last Name">
+                </div>
+
+                <!--City field -->
+                <div class="form-group mt-2">
+                    <label for="cityField" class="fw-bold">City & PinCode</label>
+                    <input type="text" id="cityField" class="form-control mt-2" placeholder="Enter Your City">
+                </div>
+
+                <!--Phone Number field -->
+                <div class="form-group mt-2">
+                    <label for="pnoField" class="fw-bold">Phone Number</label>
+                    <input type="text" id="pnoField" class="form-control mt-2" required placeholder="Enter Your Phone Number">
+                </div>
+
+
+                <!--Github Url field -->
+                <div class="form-group mt-2">
+                    <label for="gitField" class="fw-bold">Github Profile URL</label>
+                    <input type="text" id="gitField" class="form-control mt-2" placeholder="Github Profile URL">
+                </div>
+
+            </div>
+
+
+            <!--Next Button -->
+            <div class="form-group mt-4 mx-auto my-4" style="width:91px">
+                <button type="button" id="next-btn" class="btn btn-primary py-2 px-4 fw-light fs-5">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------- Form-1 ends --------------------------------->
+
+    <!------------------------------------ Form-2 starts -------------------------------->
+
+    <div class="container bg-light mt-4 form-2" id="main-form-2">
+        <div class="row">
+            <h2 class="text-center mb-3 mt-2">Professional Information</h2>
+
+            <div class="col-md-6">
+                <!-- first column of 6 rows -->
+
+                <!--Career Objective field -->
+                <div class="form-group mt-2">
+                    <label for="objField" class="fw-bold">Career Objective</label>
+                    <textarea name="objField" id="objField" class="form-control" cols="5" rows="4" placeholder="">
+                    </textarea>
+                </div>
+
+
+                <!--Internship field -->
+                <div class="form-group mt-2">
+                    <label for="internField" class="fw-bold">Internships/Trainings</label>
+                    <textarea name="internField" id="internField" class="form-control internField" placeholder="Enter Your Objective...">
+                    </textarea>
+                    <div class="form-group mt-2 mx-auto" style="width:91px" id="internAddBtn-1">
+                        <button onclick="addNewInternField()" type="button" id="internAddBtn" class="btn btn-primary fw-light">Add</button>
+                    </div>
+                </div>
+
+                <!--Projects field -->
+                <div class="form-group mt-2">
+                    <label for="projField" class="fw-bold">Projects</label>
+                    <textarea name="projField" id="projField" class="form-control projField" placeholder="Enter Your Objective...">
+                    </textarea>
+                    <div class="form-group mt-2 mx-auto" style="width:91px" id="projAddBtn-1">
+                        <button onclick="addNewProjField()" type="button" id="projAddBtn" class="btn btn-primary fw-light">Add</button>
+                    </div>
+                </div>
+
+                <!--Certificates -->
+                <div class="form-group mt-2">
+                    <label for="certiField" class="fw-bold">Extra Co-Curricular Activities</label>
+                    <textarea name="certiField" id="certiField" class="form-control certiField"></textarea>
+                </div>
+                <div class="form-group mt-2 mx-auto" style="width:91px" id="certiAddBtn-1">
+                    <button onclick="addNewCertiField()" type="button" id="certiAddBtn" class="btn btn-primary fw-light">Add</button>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <!-- second column of 6 rows -->
+
+                <!--Education field -->
+                <div class="form-group mt-2" id="edu">
+                    <label for="eduField" class="fw-bold">Education Details</label>
+                    <textarea name="eduField" id="eduField" class="form-control eduField" placeholder=""></textarea>
+                    <div class="form-group mt-2 mx-auto" id="eduAddBtn-1" style="width:91px">
+                        <button onclick="addNewEduField()" type="button" id="eduAddBtn" class="btn btn-primary fw-light">Add</button>
+                    </div>
+                </div>
+
+                <!-- Technical Skills field -->
+                <div class="form-group mt-2">
+                    <label for="tskillField" class="fw-bold">Technical Skills</label>
+                    <textarea name="tskillField" id="tskillField" class="form-control tsField" placeholder=""></textarea>
+                    <div class="form-group mt-2 mx-auto" style="width:91px" id="techAddBtn-1">
+                        <button type="button" onclick="addNewTechField()" id="techAddBtn" class="btn btn-primary fw-light">Add</button>
+                    </div>
+                </div>
+
+                <!-- Professional Skills field -->
+                <div class="form-group mt-2">
+                    <label for="pskillField" class="fw-bold">Professional Skills</label>
+                    <textarea name="pskillField" id="pskillField" class="form-control psField" placeholder=""></textarea>
+                    <div class="form-group mt-2 mx-auto" style="width:91px" id="proAddBtn-1">
+                        <button onclick="addNewProfField()" type="button" id="addbtn6" class="btn btn-primary fw-light">Add</button>
+                    </div>
+                </div>
+
+
+                <!--Extra Co-Curricular Activities -->
+                <div class="form-group mt-2">
+                    <label for="extracoField" class="fw-bold">Extra Co-Curricular Activities</label>
+                    <textarea name="extracoField" id="extracoField" class="form-control coField"></textarea>
+                </div>
+                <div class="form-group mt-2 mx-auto" style="width:91px" id="coAddBtn-1">
+                    <button onclick=" addNewCoField() " type="button " id="addbtn8 " class="btn btn-primary fw-light ">Add</button>
+                </div>
+            </div>
+
+
+            <!--Generate Resume Button -->
+            <div class="form-group mt-4 mx-auto my-4 " style="width:91px ">
+                <button type="button " id="back-btn " class="btn btn-primary py-2 px-5 fw-light fs-5 ">Generate Resume</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- form-2 ends -->
+
+    <!-- form-3 starts -->
+
+
+    <!-- <div class="container bg-light mt-4 form-3 " id="main-form-3 ">
+
+        <div class="form-group mt-2 ">
+            <label for="extracoField " class="fw-bold ">Declaration</label>
+            <textarea name="extracoField " id="declField " cols="5 " rows="4 " class="form-control "></textarea>
+        </div>
+    </div> -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+    <script src="../script.js "></script>
+</body>
+
+</html>
