@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../images/resume-input-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-form {
+    border: solid yellow;
+}
+
+#main-form-2 {
+    display: none;
+}
+
+#main-form-3 {
+    display: none;
+}
