@@ -66,8 +66,45 @@
         </div>
 
     </div>
+    <div class="container bg-light" id="cv-form2">
+		<h1 class="text-center my-2">Professional Information</h1>
+		<div class="row">
+			<div class="col-md-6 my-5">
 
 
+				<div class="form-group mt-2">
+					<label for="">Objective</label>
+					<textarea placeholder="Enter here" class="form-control " rows="5" id="objectiveField">
+					</textarea>
+				</div>
+
+				<div class="form-group mt-2" id="we">
+					<label for="">Work Experience</label>
+					<textarea placeholder="Enter here" class="form-control weField" rows="3">
+					</textarea>
+
+					<div class="container text-center mt-2" id="weAddButton">
+						<button onclick="addnewWEField()" class="btn btn-primary btn-sm">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 my-5">
+				<div class="form-group mt-2" id="aq">
+					<label for="">Academic Qualification</label>
+					<textarea placeholder="Enter here" class="form-control aqField" rows="3">
+					</textarea>
+
+					<div class="container text-center mt-2" id="aqAddButton">
+						<button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+					</div>
+				</div>
+			</div>
+			<div class="container text-center mt-3">
+				<button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
