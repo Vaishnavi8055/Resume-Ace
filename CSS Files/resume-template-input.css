@@ -15,10 +15,40 @@ body {
     border: solid yellow;
 }
 
-#main-form-2 {
+#main-form-3 {
     display: none;
 }
 
-#main-form-3 {
+.my-image {
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.background {
+    background-color: aqua;
+}
+
+#cv-template1 {
     display: none;
+}
+
+#photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid yellow;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 410px;
+    padding-right: auto;
+    display: none;
+    margin-bottom: 50px;
+}
+
+#main-form-2 {
+    display: none;
+    margin-bottom: 100px;
 }

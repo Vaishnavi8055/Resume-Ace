@@ -21,7 +21,7 @@
 
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top flex-column border border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top flex-column border border-bottom" id="navbarId">
         <div class="container">
             <a href="/index.html" class="navbar-brand fs-2 fw-bolder" style="font-family: 'Alice', serif;"><span class="text-primary">Resume</span> <span class="text-primary">Ace</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,7 +132,7 @@
                 <!--Internship field -->
                 <div class="form-group mt-2">
                     <label for="internField" class="fw-bold">Internships/Trainings</label>
-                    <textarea name="internField" id="internField" class="form-control internField" placeholder="Enter Your Objective...">
+                    <textarea name="internField" id="internField" class="form-control internFields" placeholder="Enter Your Objective...">
                     </textarea>
                     <div class="form-group mt-2 mx-auto" style="width:91px" id="internAddBtn-1">
                         <button onclick="addNewInternField()" type="button" id="internAddBtn" class="btn btn-primary fw-light">Add</button>
@@ -203,7 +203,10 @@
 
             <!--Generate Resume Button -->
             <div class="form-group mt-4 mx-auto my-4" style="width:196px">
-                <button style="width: 12rem;" type="button " id="back-btn " class="btn btn-primary px-2 fw-light fs-5 btn-lg">Generate Resume</button>
+                <button style="width: 12rem;" type="button " id="back-btn" class="btn btn-primary px-2 fw-light fs-5 btn-lg">Next</button>
+                <!-- <button class="btn background" id="back-pro-btn">
+                    Back
+                 </button> -->
             </div>
         </div>
     </div>
@@ -211,7 +214,93 @@
 
     <!-- form-2 ends -->
 
+    <div class="container container-fluid bg-light py-4" id="photo">
+        <label class="fw-bold" for="photoField">Choose your photo</label>
+        <br>
+        <input class="mt-3" type="file" name="photoField" id="photoField">
 
+        <!--Generate Resume Button -->
+        <div class="form-group mt-4" style="width:194px">
+            <button onclick="generateCV()" style="width: 12rem;" type="button " id="generateResume" class="btn btn-primary px-2 fw-light fs-5 btn-lg">Generate Resume</button>
+        </div>
+    </div>
+
+
+    <!---------------------------------- template-1 ------------------------------------->
+
+    <!-- cv template -->
+    <div class="container container-fluid mt-5 bg-light" id="cv-template1" style="margin-bottom: 15px;">
+        <div class="row">
+            <div class="col-md-4 text-center background py-5">
+                <!-- first col -->
+                <img src="/images/carousel-bg.jpg" alt="" class="img-fluid my-image">
+                <div class="container">
+                    <p id="nameT1">Kapil kumar</p>
+                    <p id="contactT">+911234567890</p>
+                    <p id="addressT">156 dampier nagar mathura</p>
+                    <hr>
+                    <p><a id="fbT" href="#">www.facebook.com</a></p>
+                    <p><a id="instaT" href="#">www.instagram.com</a></p>
+                    <p><a id="linkedT" href="#">www.linkdin.com</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-8 py-5">
+                <!-- second col -->
+                <h1 class="text-center" style="font-weight: 980;" id="nameT2">Kapil Kumar</h1>
+
+                <!-- Objective Card -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nihil quo itaque temporibus sit magnam ullam qui ipsum at soluta. Dolorum ratione tempora sunt obcaecati minus illo eveniet alias soluta, molestias nobis autem
+                            qui, provident eos magnam eligendi explicabo. Reiciendis dignissimos itaque eos, provident ex tenetur numquam ullam est eveniet.</p>
+
+                    </div>
+                </div>
+
+                <!-- work experience -->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Academic Qualification -->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background" id="print-btn">
+                        Print CV
+                    </button>
+                    <!-- <button onclick="printCV()" class="btn background" id="back-pro-btn">
+                       Back
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
