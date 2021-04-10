@@ -79,3 +79,7 @@ nextbtn.onclick = function () {
     document.getElementById('cv-form2').style.display = 'block';
     document.getElementById('cv-form1').style.display = 'none';
 }
+function printCV() {
+    document.getElementById("print-btn").style.display = 'none';
+    window.print();
+}
