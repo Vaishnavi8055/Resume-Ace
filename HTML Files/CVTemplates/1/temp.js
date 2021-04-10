@@ -73,3 +73,9 @@ function generateCV() {
     document.getElementById("cv-template1").style.display = 'block';
 
 }
+
+let nextbtn = document.getElementById('next-btn')
+nextbtn.onclick = function () {
+    document.getElementById('cv-form2').style.display = 'block';
+    document.getElementById('cv-form1').style.display = 'none';
+}
