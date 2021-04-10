@@ -1,0 +1,15 @@
+.my-image{
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+.background{
+    background-color: aqua;
+}
+#cv-template1{
+    display: none;
+}
+#cv-form2{
+    display: none;
+}
