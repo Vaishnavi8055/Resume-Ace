@@ -67,44 +67,125 @@
 
     </div>
     <div class="container bg-light" id="cv-form2">
-		<h1 class="text-center my-2">Professional Information</h1>
-		<div class="row">
-			<div class="col-md-6 my-5">
+        <h1 class="text-center my-2">Professional Information</h1>
+        <div class="row">
+            <div class="col-md-6 my-5">
 
 
-				<div class="form-group mt-2">
-					<label for="">Objective</label>
-					<textarea placeholder="Enter here" class="form-control " rows="5" id="objectiveField">
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea placeholder="Enter here" class="form-control " rows="5" id="objectiveField">
 					</textarea>
-				</div>
+                </div>
 
-				<div class="form-group mt-2" id="we">
-					<label for="">Work Experience</label>
-					<textarea placeholder="Enter here" class="form-control weField" rows="3">
-					</textarea>
-
-					<div class="container text-center mt-2" id="weAddButton">
-						<button onclick="addnewWEField()" class="btn btn-primary btn-sm">Add</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6 my-5">
-				<div class="form-group mt-2" id="aq">
-					<label for="">Academic Qualification</label>
-					<textarea placeholder="Enter here" class="form-control aqField" rows="3">
+                <div class="form-group mt-2" id="we">
+                    <label for="">Work Experience</label>
+                    <textarea placeholder="Enter here" class="form-control weField" rows="3">
 					</textarea>
 
-					<div class="container text-center mt-2" id="aqAddButton">
-						<button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
-					</div>
-				</div>
-			</div>
-			<div class="container text-center mt-3">
-				<button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
-			</div>
-		</div>
-	</div>
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addnewWEField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 my-5">
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea placeholder="Enter here" class="form-control aqField" rows="3">
+					</textarea>
+
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center mt-3">
+                <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- cv template -->
+    <div class="container container-fluid" id="cv-template1">
+        <div class="row">
+            <div class="col-md-4 text-center background py-5">
+                <!-- first col -->
+                <img id="imageT" src="" alt="" class="img-fluid my-image">
+                <div class="container">
+                    <p id="nameT1">Kapil kumar</p>
+                    <p id="contactT">+911234567890</p>
+                    <p id="addressT">156 dampier nagar mathura</p>
+                    <hr>
+                    <p><a id="fbT" href="#">www.facebook.com</a></p>
+                    <p><a id="instaT" href="#">www.instagram.com</a></p>
+                    <p><a id="linkedT" href="#">www.linkdin.com</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-8 py-5">
+                <!-- second col -->
+                <h1 class="text-center" style="font-weight: 980;" id="nameT2">Kapil Kumar</h1>
+
+                <!-- Objective Card -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptate nihil quo itaque temporibus sit magnam ullam qui ipsum at soluta.
+                            Dolorum ratione tempora sunt obcaecati minus illo eveniet alias soluta,
+                            molestias nobis autem qui, provident eos magnam eligendi explicabo.
+                            Reiciendis dignissimos itaque eos, provident ex tenetur numquam ullam est
+                            eveniet.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Academic Qualification -->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background" id="print-btn">
+                        Print CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
