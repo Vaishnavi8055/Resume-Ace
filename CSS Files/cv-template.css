@@ -116,23 +116,23 @@ p .para {
     display: inline-block;
 } */
 
-.img-container-r:hover .button {
+.img-container:hover .button {
     opacity: 3;
 }
 
-.img-container-r:hover .button2 {
+.img-container:hover .button2 {
     opacity: 3;
 }
 
-.rbutton:hover {
+.button:hover {
     opacity: 3;
 }
 
-.rbutton2:hover {
+.button2:hover {
     opacity: 3;
 }
 
-.rbutton {
+.button {
     position: absolute;
     height: 45px;
     width: 200px;
@@ -146,7 +146,7 @@ p .para {
     padding-top: 6px;
 }
 
-.rbutton2 {
+.button2 {
     position: absolute;
     height: 45px;
     width: 200px;
@@ -160,7 +160,7 @@ p .para {
     padding-top: 6px;
 }
 
-.rbutton a {
+.button a {
     color: white;
     z-index: 1;
     background-color: black;
@@ -168,7 +168,7 @@ p .para {
     font-weight: bolder;
 }
 
-.rbutton2 a {
+.button2 a {
     color: white;
     z-index: 1;
     background-color: black;
