@@ -223,8 +223,8 @@ grbtnId.onclick = function() {
 
 
 
-    let internField = document.getElementById('internField').value
-    let eduField = document.getElementById('eduField')
+    // let internField = document.getElementById('internField').value
+    // let eduField = document.getElementById('eduField')
 
     // let nameField2 = document.getElementById('nameField').value
     // let nameT2 = document.getElementById('nameT2')
@@ -236,12 +236,13 @@ grbtnId.onclick = function() {
     document.getElementById('objectiveT').innerHTML = objField;
     document.getElementById('instaT').innerHTML = gitField;
     document.getElementById('fbT').innerHTML = ldField;
+    let file = document.getElementById('photoField').files[0];
     //  document.getElementById('weT').innerHTML = internField;
     // document.getElementById('aqT').innerHTML = eduField;
 
 
     //Internship/work experience
-    let weTs = document.getElementsByClassName('internFields');
+    let weTs = document.getElementsByClassName('internField');
 
     let str = "";
     for (let e of weTs) {
@@ -252,7 +253,7 @@ grbtnId.onclick = function() {
 
 
 
-    ////Academic/Education
+    //Academic/Education
     let eduTs = document.getElementsByClassName('eduField');
 
     let str2 = "";
@@ -262,22 +263,29 @@ grbtnId.onclick = function() {
 
     document.getElementById('aqT').innerHTML = str2;
 
+    //Reads the URL of photo
+    let reader = new FileReader()
+    reader.readAsDataURL(file);
 
-
-
-    // Assigning
-    // nameT2.innerHTML = nameField2;
-    // phoneT1.innerHTML = phoneField;
-    // nameT1.innerHTML = nameField;
-    // objectiveT.innerHTML = objField;
-    // addressT.innerHTML = addField;
-
-
-
-    // document.getElementById("cv-form").style.display = 'none';
-    // document.getElementById("cv-template1").style.display = 'block';
-
+    //set the image to template
+    reader.onloadend = function() {
+        document.getElementById('imgT').src = reader.result;
+    }
 }
+
+// Assigning
+// nameT2.innerHTML = nameField2;
+// phoneT1.innerHTML = phoneField;
+// nameT1.innerHTML = nameField;
+// objectiveT.innerHTML = objField;
+// addressT.innerHTML = addField;
+
+
+
+// document.getElementById("cv-form").style.display = 'none';
+// document.getElementById("cv-template1").style.display = 'block';
+
+
 
 // let backprobtn = document.getElementById('back-pro-btn')
 // backprobtn.onclick = function() {
