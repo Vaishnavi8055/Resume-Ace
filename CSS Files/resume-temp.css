@@ -99,89 +99,12 @@ p .para {
     text-decoration: none;
 }
 
-
-/* 
-.Use-button {
-    display: none;
-} */
-
-
-/* img:hover+.button,
-.button:hover {
-    display: inline-block;
-} */
-
-
-/* img:hover+.Use-button {
-    display: inline-block;
-} */
-
-.img-container:hover .button {
-    opacity: 3;
-}
-
-.img-container:hover .button2 {
-    opacity: 3;
-}
-
 .img-container-r:hover .button {
     opacity: 3;
 }
 
 .img-container-r:hover .button2 {
     opacity: 3;
-}
-
-.button:hover {
-    opacity: 3;
-}
-
-.button2:hover {
-    opacity: 3;
-}
-
-.button {
-    position: absolute;
-    height: 45px;
-    width: 200px;
-    left: 270px;
-    top: 930px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-    border: solid 2px blue;
-    background-color: black;
-    padding-top: 6px;
-}
-
-.button2 {
-    position: absolute;
-    height: 45px;
-    width: 200px;
-    left: 950px;
-    top: 930px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .35s ease;
-    border: solid 2px blue;
-    background-color: black;
-    padding-top: 6px;
-}
-
-.button a {
-    color: white;
-    z-index: 1;
-    background-color: black;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-.button2 a {
-    color: white;
-    z-index: 1;
-    background-color: black;
-    text-decoration: none;
-    font-weight: bolder;
 }
 
 .rbutton:hover {
@@ -197,7 +120,7 @@ p .para {
     height: 45px;
     width: 200px;
     left: 270px;
-    top: 1670px;
+    top: 930px;
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
@@ -211,7 +134,7 @@ p .para {
     height: 45px;
     width: 200px;
     left: 950px;
-    top: 1670px;
+    top: 930px;
     text-align: center;
     opacity: 0;
     transition: opacity .35s ease;
