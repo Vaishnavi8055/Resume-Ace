@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #71bce7;
+}
+
+.rs-head {
+    margin-top: 3rem;
+    margin-right: 28rem;
+    margin-left: 28rem;
+    margin-bottom: 3rem;
+}
