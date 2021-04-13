@@ -1,0 +1,43 @@
+.line::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+}
+.line{
+    color: blue;
+}
+#head{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#head1{
+   text-align: center;
+   flex: auto;
+   margin: 0px auto;
+   padding-left: 100px;
+}
+#head2{
+    margin-left: auto;
+    margin-right: 20px;
+}
+@media (max-width:670px){
+#head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#head1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+}
+#head2{
+    margin-left: auto;
+    margin-right: auto;
+}
+}
