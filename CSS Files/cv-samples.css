@@ -1,0 +1,341 @@
+.navbar-nav>li {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+body {
+    background-image: url('../images/resume-samples-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    /* border: #0065ac solid; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu,
+.dropdown-menu>li>a {
+    border-radius: 2%;
+    border-color: #000;
+}
+
+.dropdown-menu>li>a:hover {
+    color: white;
+    background-color: #0065ac;
+    font-weight: 500;
+}
+
+.rs-head {
+    margin-top: 3rem;
+    margin-right: 28rem;
+    margin-left: 28rem;
+    margin-bottom: 3rem;
+}
+
+.rs-1 {
+    height: 650px;
+    width: 617px;
+    margin-top: 30px;
+    margin-right: 34px;
+}
+
+#rsl li {
+    display: inline;
+}
+
+.support {
+    position: relative;
+    width: 14%;
+    /* border: solid yellow; */
+}
+
+.support ul li {
+    list-style: none;
+}
+
+.support ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.support ul li a:hover {
+    color: #2196F3;
+}
+
+.copyright-section {
+    color: white;
+    margin: 0 auto;
+}
+
+#copyright::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    /* position:absolute; */
+    background-color: yellow;
+    transition: all .3s;
+}
+
+#copyright:hover:after {
+    width: 100%;
+}
+
+#copyright #footer-link {
+    text-decoration: none;
+    color: #2196F3;
+    font-family: "FontAwesome";
+    font-weight: 900;
+}
+
+.links-c {
+    text-decoration: none;
+    border: #000;
+    color: grey;
+    text-align: center;
+}
+
+#contact button {
+    border: #222;
+    height: max-content;
+    width: max-content;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#contact button a:hover {
+    color: beige;
+}
+
+.footer {
+    margin-top: 10rem;
+    /* border: solid yellow; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer .container .section {
+    margin-right: 30px;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    background: #222;
+    border-radius: 50%;
+}
+
+.social li a:hover {
+    background-color: white;
+}
+
+.social li a .fa {
+    font-size: 20px;
+}
+
+.quick-links {
+    position: relative;
+    width: 16%;
+}
+
+.quick-links ul li {
+    list-style: none;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.quick-links ul li a:hover {
+    color: #2196F3;
+}
+
+.resume-guide {
+    position: relative;
+    width: 13%;
+}
+
+.resume-guide ul li {
+    list-style: none;
+}
+
+.resume-guide ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.resume-guide ul li a:hover {
+    color: #2196F3;
+}
+
+.support {
+    position: relative;
+    width: 14%;
+    /* border: solid yellow; */
+}
+
+.support ul li {
+    list-style: none;
+}
+
+.support ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.support ul li a:hover {
+    color: #2196F3;
+}
+
+.footer {
+    margin-top: 10rem;
+    /* border: solid yellow; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer .container .section {
+    margin-right: 30px;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    /* border: solid blue; */
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    background: #222;
+    border-radius: 50%;
+    /* border: solid rgb(190, 181, 181); */
+}
+
+.social li a:hover {
+    background-color: white;
+}
+
+.social li a .fa {
+    font-size: 20px;
+}
+
+.quick-links {
+    position: relative;
+    width: 16%;
+}
+
+.quick-links ul li {
+    list-style: none;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.quick-links ul li a:hover {
+    color: #2196F3;
+}
+
+.resume-guide {
+    position: relative;
+    width: 13%;
+}
+
+.resume-guide ul li {
+    list-style: none;
+}
+
+.resume-guide ul li a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.resume-guide ul li a:hover {
+    color: #2196F3;
+}

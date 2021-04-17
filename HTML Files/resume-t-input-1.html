@@ -217,91 +217,178 @@
     <div class="container container-fluid bg-light py-4" id="photo">
         <label class="fw-bold" for="photoField">Choose your photo</label>
         <br>
-        <input class="mt-3" type="file" name="photoField" id="photoField">
+        <input class="mt-3 " type="file " name="photoField" id="photoField">
 
         <!--Generate Resume Button -->
-        <div class="form-group mt-4" style="width:194px">
-            <button onclick="generateCV()" style="width: 12rem;" type="button " id="generateResume" class="btn btn-primary px-2 fw-light fs-5 btn-lg">Generate Resume</button>
+        <div class="form-group mt-4 " style="width:194px ">
+            <button onclick="generateCV() " style="width: 12rem; " type="button " id="generateResume" class="btn btn-primary px-2 fw-light fs-5 btn-lg ">Generate Resume</button>
         </div>
     </div>
 
 
-    <!---------------------------------- template-1 ------------------------------------->
+    <!---------------------------------- template to be deleted ------------------------------------->
 
     <!-- cv template -->
-    <div class="container container-fluid mt-5 bg-light" id="cv-template1" style="margin-bottom: 15px;">
-        <div class="row">
-            <div class="col-md-4 text-center background py-5">
-                <!-- first col -->
-                <img src="/images/carousel-bg.jpg" alt="" class="img-fluid my-image" id="imgT">
-                <div class="container">
-                    <p id="nameT1">Kapil kumar</p>
-                    <p id="contactT">+911234567890</p>
-                    <p id="addressT">156 dampier nagar mathura</p>
-                    <hr>
-                    <p><a id="fbT" href="#">www.facebook.com</a></p>
-                    <p><a id="instaT" href="#">www.instagram.com</a></p>
-                    <p><a id="linkedT" href="#">www.linkdin.com</a></p>
-                </div>
-            </div>
-
-            <div class="col-md-8 py-5">
-                <!-- second col -->
-                <h1 class="text-center" style="font-weight: 980;" id="nameT2">Kapil Kumar</h1>
-
-                <!-- Objective Card -->
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Objective</h3>
-                    </div>
-                    <div class="card-body">
-                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nihil quo itaque temporibus sit magnam ullam qui ipsum at soluta. Dolorum ratione tempora sunt obcaecati minus illo eveniet alias soluta, molestias nobis autem
-                            qui, provident eos magnam eligendi explicabo. Reiciendis dignissimos itaque eos, provident ex tenetur numquam ullam est eveniet.</p>
-
-                    </div>
-                </div>
-
-                <!-- work experience -->
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Work Experience</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul id="weT">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Academic Qualification -->
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Academic Qualification</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul id="aqT">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container mt-3 text-center">
-                    <button onclick="printCV()" class="btn background" id="print-btn">
-                        Print CV
-                    </button>
-                    <!-- <button onclick="printCV()" class="btn background" id="back-pro-btn">
-                       Back
-                    </button> -->
-                </div>
-            </div>
-        </div>
+    <!-- <div class="container container-fluid mt-5 bg-light " id="cv-template1 " style="margin-bottom: 15px; ">
+        <div class="row ">
+            <div class="col-md-4 text-center background py-5 ">
+                 first col -->
+    <!-- <img src="/images/carousel-bg.jpg " alt=" " class="img-fluid my-image " id="imgT ">
+    <div class="container ">
+        <p id="nameT1">Kapil kumar</p>
+        <p id="contactT">+911234567890</p>
+        <p id="addressT">156 dampier nagar mathura</p>
+        <hr>
+        <p><a id="fbT" href="#">www.facebook.com</a></p>
+        <p><a id="instaT" href="#">www.instagram.com</a></p>
+        <p><a id="linkedT" href="#">www.linkdin.com</a></p>
+    </div>
     </div>
 
+    <div class="col-md-8 py-5 ">
+        second col -->
+    <!-- <h1 class="text-center " style="font-weight: 980; " id="nameT2 ">Kapil Kumar</h1> -->
+
+    <!-- Objective Card -->
+    <!-- <div class="card mt-4 ">
+        <div class="card-header background ">
+            <h3>Objective</h3>
+        </div>
+        <div class="card-body ">
+            <p id="objectiveT ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nihil quo itaque temporibus sit magnam ullam qui ipsum at soluta. Dolorum ratione tempora sunt obcaecati minus illo eveniet alias soluta, molestias nobis autem qui, provident
+                eos magnam eligendi explicabo. Reiciendis dignissimos itaque eos, provident ex tenetur numquam ullam est eveniet.</p>
+
+        </div>
+    </div> -->
+
+    <!-- work experience -->
+
+    <!-- <div class="card mt-4 ">
+            <div class="card-header background ">
+                <h3>Work Experience</h3>
+            </div>
+            <div class="card-body ">
+                <ul id="weT ">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                </ul>
+            </div>
+        </div> -->
+
+    <!-- Academic Qualification -->
+
+    <!-- <div class="card mt-4 ">
+            <div class="card-header background ">
+                <h3>Academic Qualification</h3>
+            </div>
+            <div class="card-body ">
+                <ul id="aqT ">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ut.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mt-3 text-center ">
+            <button onclick="printCV() " class="btn background " id="print-btn ">
+                        Print CV
+                    </button> -->
+    <!-- <button onclick="printCV() " class="btn background " id="back-pro-btn ">
+                       Back
+                    </button> -->
+    <!-- </div>
+    </div>
+    </div>
+    </div> -->
+
+    <!-- Template just for checking ends here -->
+
+    <!-- --------------------------- ------------------------------------------------------->
+
+
+    <!--------------------------- Resume Template -------------------------------->
+    <div id="head ">
+        <div id="head1 ">
+            <h1 style="display:inline; margin-right: 4px; color: blue;" id="fnameT">kapil</h1>
+            <h1 style="display:inline; color: blue; " id="lnameT">kumar</h1>
+            <h5 id="address">naujheel bajna</h5>
+            <h5 style="display:inline;">apnamaildaalo@gmail.com</h5>
+            <h5 style="display:inline;">1234567890</h5>
+            <a href=" " style="display: block; ">github link</a>
+            <a href=" ">linkdin link</a>
+        </div>
+        <div id="head2 ">
+            <img src="181500308.jpg " alt=" " height="200px " width="150px ">
+        </div>
+    </div>
+    <!-- career objective -->
+    <div class="mx-2 ">
+        <h2 class="line ">CAREER OBJECTIVE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, error?</p>
+    </div>
+    <!-- education -->
+    <div class="mx-2 ">
+        <h2 class="line ">EDUCATION</h2>
+        <ul>
+            <li>btech</li>
+            <li>12</li>
+            <li>10</li>
+        </ul>
+    </div>
+    <!-- internships/training experience -->
+    <div class="mx-2 ">
+        <h2 class="line ">INTERNSHIPS/TRANINGS EXPERIENCE</h2>
+        <ul>
+            <li>internship</li>
+            <li>internship</li>
+            <li>internship</li>
+            <li>internship</li>
+        </ul>
+    </div>
+    <!-- projects -->
+    <div class="mx-2 ">
+        <h2 class="line ">PROJECTS</h2>
+        <ul>
+            <li>project1</li>
+            <li>project2</li>
+            <li>project3</li>
+        </ul>
+    </div>
+    <!-- Skills -->
+    <div class="mx-2 ">
+        <h2 class="line ">SKILLS</h2>
+        <h3>Technical</h3>
+        <ul>
+            <li>skill1</li>
+            <li>skill2</li>
+            <li>skill3</li>
+        </ul>
+        <h3>Professional</h3>
+        <ul>
+            <li>skill1</li>
+            <li>skill2</li>
+            <li>skill3</li>
+        </ul>
+    </div>
+    <!-- extra/co-curricular activities -->
+    <div class="mx-2 ">
+        <h2 class="line ">EXTRA/Co-CURRICULAR ACTIVITIES</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div class="mx-2 ">
+        <h2 class="line ">CERTIFICATES</h2>
+        <ul>
+            <li>certificate1</li>
+            <li>certificate1</li>
+            <li>certificate1</li>
+        </ul>
+    </div>
+    <button onclick="print1() ">print</button>
 
 
 

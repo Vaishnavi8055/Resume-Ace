@@ -221,6 +221,8 @@ grbtnId.onclick = function() {
 
     let gitField = document.getElementById('gitField').value
 
+    let fnameField = document.getElementById('fnameField').value
+
 
 
     // let internField = document.getElementById('internField').value
@@ -236,6 +238,7 @@ grbtnId.onclick = function() {
     document.getElementById('objectiveT').innerHTML = objField;
     document.getElementById('instaT').innerHTML = gitField;
     document.getElementById('fbT').innerHTML = ldField;
+    document.getElementById('fnameT').innerHTML = fnameField;
     let file = document.getElementById('photoField').files[0];
     //  document.getElementById('weT').innerHTML = internField;
     // document.getElementById('aqT').innerHTML = eduField;
