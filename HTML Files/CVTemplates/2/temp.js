@@ -71,18 +71,27 @@ function generateCV() {
     }
     document.getElementById('aqT').innerHTML = str1;
 
+    //Technical skills
+    let tss = document.getElementsByClassName('tsField')
+    let str2 = "";
+    for (let e2 of tss) {
+        str2 = str2 + `<li> ${e2.value} </li>`;
+    }
+    document.getElementById('tsT').innerHTML = str2;
+
+
     //profile picture
     let file = document.getElementById("imageField").files[0];
     let reader = new FileReader();
     reader.readAsDataURL(file);
     //set the image to template
-    reader.onloadend = function() {
+    reader.onloadend = function () {
         document.getElementById("imageT").src = reader.result;
     }
 
     document.getElementById("cv-form1").style.display = 'none';
     document.getElementById("cv-form2").style.display = 'none';
-    document.getElementById("cv-template1").style.display = 'block';
+    document.getElementById("cv-template2").style.display = 'block';
 
 }
 let nextbtn = document.getElementById('next-btn')
