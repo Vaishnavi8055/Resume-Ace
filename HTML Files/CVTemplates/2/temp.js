@@ -80,5 +80,6 @@ nextbtn.onclick = function() {
 }
 
 function printCV() {
-
+    document.getElementById("print-btn").style.display = 'none';
+    window.print();
 }
