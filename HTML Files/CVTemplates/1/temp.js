@@ -25,6 +25,8 @@ function addNewAQField() {
 }
 
 function generateCV() {
+    document.getElementById('body').style.background = 'none'
+
     let nameField = document.getElementById("nameField").value;
     let nameT1 = document.getElementById("nameT1");
     let nameT2 = document.getElementById("nameT2");
@@ -64,7 +66,7 @@ function generateCV() {
     let reader = new FileReader();
     reader.readAsDataURL(file);
     //set the image to template
-    reader.onloadend = function () {
+    reader.onloadend = function() {
         document.getElementById("imageT").src = reader.result;
     }
 
@@ -75,11 +77,13 @@ function generateCV() {
 }
 
 let nextbtn = document.getElementById('next-btn')
-nextbtn.onclick = function () {
+nextbtn.onclick = function() {
     document.getElementById('cv-form2').style.display = 'block';
     document.getElementById('cv-form1').style.display = 'none';
 }
+
 function printCV() {
+    document.getElementById('body').style.background = 'none'
     document.getElementById("print-btn").style.display = 'none';
     window.print();
 }
