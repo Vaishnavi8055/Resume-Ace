@@ -23,6 +23,18 @@ function addNewAQField() {
     let aqAddButtonOb = document.getElementById("aqAddButton")
     aqOb.insertBefore(newNode, aqAddButtonOb)
 }
+function addNewTSField(){
+    let newNode = document.createElement("textarea")
+    newNode.classList.add("form-control")
+    newNode.classList.add("tsField")
+    newNode.classList.add("mt-2")
+    newNode.setAttribute("rows", 3)
+    newNode.setAttribute("placeholder", 'Enter here')
+
+    let tsOb = document.getElementById("ts")
+    let tsAddButtonOb = document.getElementById("tsAddButton")
+    tsOb.insertBefore(newNode, tsAddButtonOb)
+}
 
 function generateCV() {
     let nameField = document.getElementById("nameField").value;
