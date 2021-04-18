@@ -1,15 +1,24 @@
-.my-image{
+.my-image {
     /* border: 1px solid black; */
     border-radius: 100%;
     width: 200px;
     height: 200px;
 }
-.background{
+
+.background {
     background-color: aqua;
 }
-#cv-template1{
+
+#cv-template1 {
     display: none;
 }
-#cv-form2{
+
+#cv-form2 {
     display: none;
+}
+
+#body {
+    background-image: url('/images/resume-input-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

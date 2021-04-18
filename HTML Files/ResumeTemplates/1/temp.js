@@ -7,11 +7,12 @@ function addNewEduField() {
     newNode.classList.add('form-control');
     newNode.classList.add('eduField');
     newNode.classList.add('mt-2')
-    // let eduOb = document.getElementById('edu')
+        // let eduOb = document.getElementById('edu')
     let eduAddBtnOb = document.getElementById('eduAddBtn-1');
     parentDiv.insertBefore(newNode, eduAddBtnOb);
 
 }
+
 function addNewTechField() {
     // the node to inserted
     let newNode = document.createElement('textarea');
@@ -131,6 +132,7 @@ function addNewInternField() {
 }
 
 function generateResume() {
+    document.getElementById('body').style.background = 'none'
 
     document.getElementById("fnameT").innerHTML = document.getElementById("nameField").value;
     document.getElementById("snameT").innerHTML = document.getElementById("lnameField").value;
@@ -145,10 +147,10 @@ function generateResume() {
     let reader = new FileReader();
     reader.readAsDataURL(file);
     //set the image to template
-    reader.onloadend = function () {
-        document.getElementById("imageT").src = reader.result;
-    }
-    //objective
+    reader.onloadend = function() {
+            document.getElementById("imageT").src = reader.result;
+        }
+        //objective
     document.getElementById("objT").innerHTML = document.getElementById("objField").value;
 
     //internships and Training Experience
@@ -213,11 +215,12 @@ function generateResume() {
 
 
 let nextbtn = document.getElementById('next-btn')
-nextbtn.onclick = function () {
+nextbtn.onclick = function() {
     document.getElementById('main-form-2').style.display = 'block';
     document.getElementById('main-form-1').style.display = 'none';
 }
-function backButton(){
+
+function backButton() {
     document.getElementById('main-form-2').style.display = 'none';
     document.getElementById('main-form-1').style.display = 'block';
 }
@@ -226,6 +229,7 @@ function backButton(){
 
 
 function printResume() {
+    document.getElementById('body').style.background = 'none';
     document.getElementById('print-btn').style.display = 'none';
     window.print();
 }
