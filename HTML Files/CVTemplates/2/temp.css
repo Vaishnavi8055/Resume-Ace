@@ -14,3 +14,7 @@
 .background {
     background-color: aqua;
 }
+
+#cv-template2 {
+    display: none;
+}
