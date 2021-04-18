@@ -74,3 +74,6 @@ function generateCV() {
 
 }
 let nextbtn = document.getElementById('next-btn')
+nextbtn.onclick = function() {
+
+}
