@@ -1,3 +1,9 @@
+#main-form-2{
+    display: none;
+}
+#template{
+    display: none;
+}
 .line::after{
     content: '';
     display: block;
