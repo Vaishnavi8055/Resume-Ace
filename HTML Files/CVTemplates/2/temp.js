@@ -73,3 +73,4 @@ function generateCV() {
     document.getElementById("cv-template1").style.display = 'block';
 
 }
+let nextbtn = document.getElementById('next-btn')
