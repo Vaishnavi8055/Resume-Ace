@@ -10,3 +10,7 @@ function addnewWEField() {
     let weAddButtonOb = document.getElementById("weAddButton")
     weOb.insertBefore(newNode, weAddButtonOb)
 }
+
+function addNewAQField() {
+
+}
