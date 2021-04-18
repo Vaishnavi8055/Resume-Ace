@@ -2,9 +2,9 @@
     display: none;
 }
 
-/* #template {
+#template {
     display: none;
-} */
+}
 
 .line::after {
     content: '';
