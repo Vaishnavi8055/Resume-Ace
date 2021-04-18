@@ -1,79 +1,27 @@
-// function print1() {
-//     window.print();
-// }
-
-
-//Selectors
-const nextbtnId = document.getElementById('next-btn');
-const nextbtnId2 = document.getElementById('back-btn');
-const form_2 = document.getElementById('main-form-2');
-const form_1 = document.getElementById('main-form-1');
-const createbtn = document.getElementById('create-btn');
-const form_3 = document.getElementById('main-form-3')
-
-
-
-
-//Functions
-
-// console.log("Heyy")
-
-nextbtnId.onclick = function() {
-    event.preventDefault();
-    form_2.style.display = 'block'
-    form_1.style.display = 'none'
-};
-
-
-
-// backbtnId.onclick = function() {
-//     event.preventDefault();
-//     form_2.style.display = 'block'
-//     form_1.style.display = 'none'
-// };
-
-
-
 function addNewEduField() {
     // console.log('hello');
-
     // the node to inserted
     let newNode = document.createElement('textarea');
-
     // get a reference to the parent node
     let parentDiv = document.getElementById('eduAddBtn-1').parentNode
-
-
-
     newNode.classList.add('form-control');
     newNode.classList.add('eduField');
     newNode.classList.add('mt-2')
-
-
     // let eduOb = document.getElementById('edu')
     let eduAddBtnOb = document.getElementById('eduAddBtn-1');
-
     parentDiv.insertBefore(newNode, eduAddBtnOb);
 
 }
-
 function addNewTechField() {
     // the node to inserted
     let newNode = document.createElement('textarea');
-
     // get a reference to the parent node
     let parentDiv = document.getElementById('techAddBtn-1').parentNode
-
-
-
     newNode.classList.add('form-control');
     newNode.classList.add('tsField');
     newNode.classList.add('mt-2');
-
-
     // let eduOb = document.getElementById('edu')
     let eduAddBtnOb = document.getElementById('techAddBtn-1');
-
     parentDiv.insertBefore(newNode, eduAddBtnOb);
 
 }
@@ -182,155 +130,102 @@ function addNewInternField() {
     parentDiv.insertBefore(newNode, eduAddBtnOb);
 }
 
+function generateResume() {
 
-let photoId = document.getElementById('photo');
-//Generate Resume button to move to CV or photo
-nextbtnId2.onclick = function() {
+    document.getElementById("fnameT").innerHTML = document.getElementById("nameField").value;
+    document.getElementById("snameT").innerHTML = document.getElementById("lnameField").value;
+    document.getElementById("addT").innerHTML = document.getElementById("addField").value;
+    document.getElementById("emailT").innerHTML = document.getElementById("emailField").value;
+    document.getElementById("ldT").innerHTML = document.getElementById("ldField").value;
+    document.getElementById("gitT").innerHTML = document.getElementById("gitField").value;
+    document.getElementById("pnoT").innerHTML = document.getElementById("pnoField").value;
 
-    let temp1 = document.getElementById('cv-template1')
-    photoId.style.display = 'block'
-    temp1.style.display = 'none'
-    form_1.style.display = 'none'
-    form_2.style.display = 'none'
-}
-
-
-let grbtnId = document.getElementById('generateResume');
-
-
-grbtnId.onclick = function() {
-    let temp1 = document.getElementById('cv-template1')
-    temp1.style.display = 'block'
-    form_1.style.display = 'none'
-    form_2.style.display = 'none'
-    photoId.style.display = 'none'
-
-    // console.log("hello")
-
-
-    // Declaration
-    // let nameField2 = document.getElementById('nameField').value
-    // let nameT2 = document.getElementById('nameT2')
-
-    let nameField = document.getElementById('nameField').value
-
-
-
-    let pnoField = document.getElementById('pnoField').value
-
-    let objField = document.getElementById('objField').value
-
-    let addField = document.getElementById('addField').value
-
-    let ldField = document.getElementById('ldField').value
-
-    let gitField = document.getElementById('gitField').value
-
-
-
-    // let internField = document.getElementById('internField').value
-    // let eduField = document.getElementById('eduField')
-
-    // let nameField2 = document.getElementById('nameField').value
-    // let nameT2 = document.getElementById('nameT2')
-
-    document.getElementById('nameT2').innerHTML = nameField;
-    document.getElementById('nameT1').innerHTML = nameField;
-    document.getElementById('contactT').innerHTML = pnoField;
-    document.getElementById('addressT').innerHTML = addField;
-    document.getElementById('objectiveT').innerHTML = objField;
-    document.getElementById('instaT').innerHTML = gitField;
-    document.getElementById('fbT').innerHTML = ldField;
-    let file = document.getElementById('photoField').files[0];
-    //  document.getElementById('weT').innerHTML = internField;
-    // document.getElementById('aqT').innerHTML = eduField;
-
-
-    //Internship/work experience
-    let weTs = document.getElementsByClassName('internField');
-
-    let str = "";
-    for (let e of weTs) {
-        str = str + `<li>${e.value}</li>`;
-    }
-
-    document.getElementById('weT').innerHTML = str;
-
-
-
-    //Academic/Education
-    let eduTs = document.getElementsByClassName('eduField');
-
-    let str2 = "";
-    for (let e of eduTs) {
-        str2 = str2 + `<li>${e.value}</li>`;
-    }
-
-    document.getElementById('aqT').innerHTML = str2;
-
-    //Reads the URL of photo
-    let reader = new FileReader()
+    //profile picture
+    let file = document.getElementById("imageField").files[0];
+    let reader = new FileReader();
     reader.readAsDataURL(file);
-
     //set the image to template
-    reader.onloadend = function() {
-        document.getElementById('imgT').src = reader.result;
+    reader.onloadend = function () {
+        document.getElementById("imageT").src = reader.result;
     }
+    //objective
+    document.getElementById("objT").innerHTML = document.getElementById("objField").value;
+
+    //internships and Training Experience
+    let intern = document.getElementsByClassName('internField')
+    let str = "";
+    for (let e of intern) {
+        str = str + `<li> ${e.value} </li>`;
+    }
+    document.getElementById('internT').innerHTML = str;
+
+    //Education
+    let edu = document.getElementsByClassName('eduField')
+    let str1 = "";
+    for (let e1 of edu) {
+        str1 = str1 + `<li> ${e1.value} </li>`;
+    }
+    document.getElementById('eduT').innerHTML = str1;
+
+    //projects
+    let project = document.getElementsByClassName('projField')
+    let str2 = "";
+    for (let e2 of project) {
+        str2 = str2 + `<li> ${e2.value} </li>`;
+    }
+    document.getElementById('projT').innerHTML = str2;
+
+    //technical skill
+    let tskill = document.getElementsByClassName('tsField')
+    let str3 = "";
+    for (let e3 of tskill) {
+        str3 = str3 + `<li> ${e3.value} </li>`;
+    }
+    document.getElementById('tskillT').innerHTML = str3;
+
+    //professional skill
+    let pskill = document.getElementsByClassName('psField')
+    let str4 = "";
+    for (let e4 of pskill) {
+        str4 = str4 + `<li> ${e4.value} </li>`;
+    }
+    document.getElementById('pskillT').innerHTML = str4;
+
+    //extracoField
+    let extraco = document.getElementsByClassName('coField')
+    let str5 = "";
+    for (let e5 of extraco) {
+        str5 = str5 + `<li> ${e5.value} </li>`;
+    }
+    document.getElementById('extracoT').innerHTML = str5;
+
+    //certificate
+    let certi = document.getElementsByClassName('certiField')
+    let str6 = "";
+    for (let e5 of certi) {
+        str6 = str6 + `<li> ${e5.value} </li>`;
+    }
+    document.getElementById('certiT').innerHTML = str6;
+
+    document.getElementById('template').style.display = 'block';
+    document.getElementById('main-form-2').style.display = 'none';
 }
 
-// Assigning
-// nameT2.innerHTML = nameField2;
-// phoneT1.innerHTML = phoneField;
-// nameT1.innerHTML = nameField;
-// objectiveT.innerHTML = objField;
-// addressT.innerHTML = addField;
+
+let nextbtn = document.getElementById('next-btn')
+nextbtn.onclick = function () {
+    document.getElementById('main-form-2').style.display = 'block';
+    document.getElementById('main-form-1').style.display = 'none';
+}
+function backButton(){
+    document.getElementById('main-form-2').style.display = 'none';
+    document.getElementById('main-form-1').style.display = 'block';
+}
 
 
 
-// document.getElementById("cv-form").style.display = 'none';
-// document.getElementById("cv-template1").style.display = 'block';
 
-
-
-// let backprobtn = document.getElementById('back-pro-btn')
-// backprobtn.onclick = function() {
-//     form_1.style.display = 'block'
-//     temp1.style.display = 'none'
-//     form_2.style.display = 'none'
-//     photoId.style.display = 'none'
-
-// }
-
-// let print = document.getElementById('print-btn');
-
-// print.onclick = function() {
-//     form_2.style.display = 'block'
-//     temp1.style.display = 'none'
-//     form_1.style.display = 'none'
-// }
-
-
-// ---------------------Generate CV Function---------------
-
-
-
-// function generateCV() {
-//     console.log("hello")
-
-//     let nameField = document.getElementById('nameField').value
-//     let nameT1 = document.getElementById('nameT1')
-
-
-//     nameT1.innerHTML = nameField;
-
-//     document.getElementById("cv-form").style.display = 'none';
-//     document.getElementById("cv-template1").style.display = 'block';
-// }
-
-function printCV() {
-    document.getElementById("print-btn").style.display = 'none';
-    document.getElementById("navbarId").style.display = 'none';
-
+function printResume() {
+    document.getElementById('print-btn').style.display = 'none';
     window.print();
-
 }
