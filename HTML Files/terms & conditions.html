@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Terms & Conditions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-image: url(/images/background-t&c.jpg);
+            font-family: 'Open Sans', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .terms {
+            background-color: darkgray;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .terms h1 {
+            text-align: center;
+            padding: 2vh;
+            text-shadow: 2px 5px 2px black;
+            font-size: 8vh;
+            background-color: blue;
+        }
+        
+        .terms a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .terms h2 {
+            font-size: 4vh;
+            margin-left: 1.5vw;
+        }
+        
+        .terms p {
+            /* font-size: 2.8vh; */
+            margin-left: 1.5vw;
+            margin-right: 2vw;
+            text-align: justify;
+        }
+        
+        .terms {
+            width: 350px;
+            height: 520px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .terms form {
+            position: absolute;
+            width: 260px;
+            left: 40px;
+            top: 80px;
+            transition: 0.5s;
+        }
+        
+        form h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: blue;
+            font-weight: bold;
+            font-size: 1.7rem;
+        }
+        
+        .btn-box {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        form button {
+            width: 120px;
+            height: 35px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: blue;
+            color: white;
+            margin-top: 12px;
+            font-weight: bolder;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        form button:hover {
+            background-color: deeppink;
+            font-weight: bolder;
+        }
+        
+        #form2,
+        #form3,
+        #form4 {
+            left: 450px;
+        }
+        
+        .step-row {
+            width: 370px;
+            height: 40px;
+            box-shadow: 0px -1px 5px -1px #000;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .step-col {
+            width: 120px;
+            text-align: center;
+            color: black;
+            font-size: larger;
+            z-index: 1;
+            font-weight: bolder;
+        }
+        
+        #progress {
+            width: 80px;
+            height: 100%;
+            position: absolute;
+            background-color: blue;
+            transition: 1s;
+        }
+        
+        #progress::after {
+            content: '';
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 20px solid blue;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            right: -20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="terms">
+
+        <form id="form1">
+            <h3>Terms & Condtions</h3>
+            <p style="text-align: justify; font-size: medium;">
+                By submitting, posting, or displaying Your Content on the Resume Ace Platform, you grant Resume Ace a nonexclusive, worldwide, royalty free, fully paid up, transferable, sublicensable (through multiple tiers), license to use, copy, reproduce, process,
+                adapt, modify, create derivative works. This Website is not for use by any minors (defined as those who are not at least 18 years of age), and you must not use this Website if you a minor.
+            </p>
+            <button type="button" id="next1">Next</button>
+
+        </form>
+        <form id="form2">
+            <h3>Reservation of Rights</h3>
+            <p style="text-align: justify; font-size: medium;">
+                We reserve the right at any time and in its sole discretion to request that you remove all links. You agree to immediately remove all links to our Web site upon such request. We also reserve the right to amend these terms of service and its linking policy
+                at any time. By continuing to link to our Web site, you agree to be bound to and abide by these linking terms of service.
+            </p>
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+        <form id="form3">
+            <h3>Content Liability</h3>
+            <p>We shall have no responsibility or liability for any content appearing on your Web site. You agree to indemnify and defend us against all claims. No link(s) may appear on any page on your Web site or within any context containing content or
+                materials that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="next3">Next</button>
+            </div>
+        </form>
+
+        <form id="form4">
+            <h3>Removal Of External Links</h3>
+            <p><br> If you find any link on our Web site or any linked web site objectionable for any reason, you may contact us about this. We will consider requests to remove links but will have no obligation to do so or to respond directly to you. Whilst
+                we endeavour to ensure that the information on this website is correct, we do not warrant its completeness or accuracy;.
+            </p>
+            <div class="btn-box">
+                <button type="button" id="back3">Back</button>
+                <button type="button" id="submit-1">
+                  <a href="/index.html">Home</a>
+                </button>
+            </div>
+        </form>
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step-1</small></div>
+            <div class="step-col"><small>Step-2</small></div>
+            <div class="step-col"><small>Step-3</small></div>
+            <div class="step-col"><small>Step-4</small></div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        //selector
+
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
+        const form3 = document.getElementById('form3');
+
+        const next1 = document.getElementById('next1');
+        const next2 = document.getElementById('next2');
+        const next3 = document.getElementById('next3');
+
+        const back1 = document.getElementById('back1');
+        const back2 = document.getElementById('back2');
+        const back3 = document.getElementById('back3');
+
+
+        const progress = document.getElementById('progress');
+
+
+        //Event Handler
+
+        next1.onclick = function() {
+            form1.style.left = '-450px';
+            form2.style.left = '40px';
+            progress.style.width = '160px';
+        };
+        next2.onclick = function() {
+            form2.style.left = '-450px';
+            form3.style.left = '40px';
+            progress.style.width = '250px';
+        };
+
+        next3.onclick = function() {
+            form3.style.left = '-450px';
+            form4.style.left = '40px';
+            progress.style.width = '400px';
+        };
+        back1.onclick = function() {
+            form1.style.left = '40px';
+            form2.style.left = '450px';
+            progress.style.width = '80px';
+        };
+        back2.onclick = function() {
+            form2.style.left = '40px';
+            form3.style.left = '450px';
+            progress.style.width = '170px';
+        };
+
+        back3.onclick = function() {
+            form3.style.left = '40px';
+            form4.style.left = '450px';
+            progress.style.width = '250px';
+        };
+    </script>
+
+</body>
+
+</html>

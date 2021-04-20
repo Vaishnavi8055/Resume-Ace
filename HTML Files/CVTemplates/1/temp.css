@@ -5,6 +5,12 @@
     height: 200px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .background {
     background-color: aqua;
 }
@@ -18,7 +24,12 @@
 }
 
 #body {
-    background-image: url('images/resume-input-bg.jpg');
+    background-image: url('/images/resume-input-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@page {
+    size: auto;
+    margin: 0mm;
 }

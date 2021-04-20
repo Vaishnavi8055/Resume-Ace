@@ -25,7 +25,7 @@ function addNewAQField() {
 }
 
 function generateCV() {
-    document.getElementById('body').style.background = 'none'
+    document.getElementById('body').style.backgroundImage = 'none'
 
     let nameField = document.getElementById("nameField").value;
     let nameT1 = document.getElementById("nameT1");

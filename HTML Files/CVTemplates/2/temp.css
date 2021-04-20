@@ -22,3 +22,14 @@
 #cv-form2 {
     display: none;
 }
+
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
+#body {
+    background-image: url('/images/resume-input-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
